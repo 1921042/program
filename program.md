@@ -61,7 +61,7 @@ Total experience is:9
 
  ```
 
-## 3:Write a progrm to find sum of two numbers
+## 3:Write a program to find sum of two numbers
 ```
 
      // to find sum of two numbers
@@ -103,7 +103,7 @@ The result is :30 + 40= 70
 
   Number is positive
 ```
-  ## 5:Write a source code to find number is even or odd
+  ## 5:Write a program  to find whether the given number is even or odd
   ```
        #include<stdio.h>
 int main()
@@ -127,30 +127,43 @@ The  number is even
 Enter a number:7
 The number is odd
 ```
-## 6:Write a source code to show the size of int,float,char,double,long,short
+## 6:Write a program to fill your information
 ```
- // size of int, float, char, double, long, short
 #include<stdio.h>
+void info();
 int main()
 {                                   
- printf("Integer:%d\n",sizeof(int));
- printf("float:%d\n",sizeof(float));
- printf("character:%d\n",sizeof(char));
- printf("double:%d\n",sizeof(double));
- printf("short:%d\n",sizeof(short));
- printf("long:%d\n",sizeof(long));
+ info();
+ }
+ void info()
+ {
+ char a[20];
+ int roll ,age;
+ long int ph;
+ printf("Enter your information:\n");
+ printf("Name =");
+ scanf("%s",&a);
+ printf(\n Roll no. =");
+ scanf("%d",&roll);
+ printf("\nPhone no.=");
+ scanf("%d",&ph);
+ 
+ printf(\n My name is %s. My roll no is %d. My phone number is %ld .My age is %d.",a,roll,ph,age);
  }
 ```
 **OUTPUT**:
+```Enter your information:
+Name= simar
+
+Roll no=445
+
+Age=25
+
+Phone no.=9922113355
+
+My name is simar. My roll no is 445.My phone number is 9922113355.My age is 25
 ```
-Integer:4
-float:4
-character:1
-double:8
-short:2
-long:8
-```
-## 7:Write a source code to find area,perimeter,volume of square
+## 7:Write a program to find area,perimeter,volume of square
 ```
    
  //Area,premiter,volume of square
@@ -180,7 +193,7 @@ Perimeter of square:16
 Area of square:16
 Volume of square:64
 ```
-## 8:Write a source code to show puts value upto n number using loop
+## 8:Write a program to show puts value upto n number using loop
 ```
 // to show punishment using loop
  #include<stdio.h>
@@ -208,7 +221,7 @@ WORK HARD AND ACHIEVE SUCCESS
 WORK HARD AND ACHIEVE SUCCESS 
 WORK HARD AND ACHIEVE SUCCESS
 ```
-## 9:To show area,diameter,circumference of circle 
+## 9:Write a program to find area,diameter,circumference of circle 
 ```
    #include<stdio.h>
  int main()
@@ -299,7 +312,7 @@ return 0;
 15 x 9 = 135
 15 x 10 = 150
 ```
-## 12:To convert Fahrehnite to Centigrade
+## 12:Write a program to convert temperature from Fahrehnite to Centigrade
 ```
 //to convert fahrehnite to celcius
 #include<stdio.h>
@@ -440,7 +453,7 @@ Enter the number5
 
 factorial of 5 is 120
 ```
-## 16:To call a patterns of face and calculator
+## 16:Write a program to call a patterns of face and calculator
 ```
 // call a pattern of face or calculator
              #include<stdio.h>
@@ -525,7 +538,7 @@ ___________________
 |        |        |
 |________|________|
 ```
-## 17:Write a program to cgeck the number is prime or not 
+## 17:Write a program to check the number is prime or not 
 ```
  #include<stdio.h>
  int main()
@@ -558,7 +571,7 @@ Enter the number:7
 
 ```
 
-## 18:To show stars pattern
+## 18:Write a program to show stars pattern
 ```
  // TO show stars using loop 
 #include<stdio.h>
@@ -650,7 +663,7 @@ Enter the starting number and the ending number:2 11
 11 is a prime number
 ```
 
-## 21:Matrix multipication
+## 21:Write a program to show Matrix multipication
  ```
 #include<stdio.h>
 int main()
