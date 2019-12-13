@@ -8,16 +8,16 @@
   
   
      
-    Name-Himani sharma
+    Name-Himani Sharma
     Branch-InformationTechnology
     Section - A2 
     Roll Number - 1921042
-    
-    # My C programes 
+    Submitted to - Prof.Ranjodh Kaur
+    # pps assignment
 
-## 1:To print hello world
+## 1:Write a source code to print hello world
 
-```
+``` 
 //To print  hello world
 #include<stdio.h>
 int main()
@@ -29,54 +29,39 @@ int main()
 ``` 
  Hello world
 ```
-## 2:To fill your information
+## 2:Write a program to calculate experience of employees
 
 ```
-  // To fill your information
+  // To calculate experience
 #include<stdio.h>
-
-  void info();
   int main()
   {
-     info();
+     int n,yr,sum=0;
+  printf("\n Enter the number of employees");
+  scanf("%d",&n);
+  for(int i=1;i<=n;i++)
+  {
+  printf("\nEnter the number of years of experience of %d employee:\n",i);
+  scanf("%d",&yr);
+  sum=sum+yr;
   }
-
-   void info()
-  {  char a[20];
-     int roll,age;
-     long int ph;
-   printf("\nEnter your information:\n");
-   printf("Name = ");
-    scanf("%s",a);
-  printf("\nRoll no=");
-scanf("%d",&roll);
-printf("\nAge = ");
- scanf("%d",&age);
- printf("\nPhone no.= ");
- scanf("%ld",&ph);
-
-printf("\nThe name is %s\nYour roll no is %d\nMy phone number is %ld\n My age is %d\n",a,roll,ph,age);
-
-}
+  printf("Total experience is: %d\n",sum);
+  return 0;
+  }
+  
 ```
 **OUTPUT:**
 ```
-Enter your information:
-Name = Jony
+Enter number of employees2
+Enter the number of years of experience of 1 employee:
+6
+Enter the number of years of experience of 2 employee:
+3
+Total experience is:9
 
-Roll no=100012
-
-Age = 25
-
-Phone no.= 9922115566
-
-The name is Jony
-Your roll no is 100012
-My phone number is 9922115566
- My age is 25
  ```
 
-## 3:To find sum of two numbers
+## 3:Write a progrm to find sum of two numbers
 ```
 
      // to find sum of two numbers
@@ -94,33 +79,31 @@ int main()
 ```
 **OUTPUT**:
 ```
-Enter two numbers to get sum:45 55
+Enter two numbers to get sum:30 40
  
-The result is :45 + 55= 100
+The result is :30 + 40= 70
 ```
-## 4:Sum and average of numbers
+## 4:Write a program to check whether the number is positive or negative
 ```
- // sum and average of number
 #include<stdio.h>
   int main()
  {                                 
-     int a,b,c,d,e,sum,avg;
+     int a;
                                                                
-   printf("Enter five numbers:");
-   scanf("%d %d %d %d %d",&a,&b,&c,&d,&e);
-    sum = a+b+c+d+e;
-   printf("The sum is:%d\n",sum);
-   avg = sum/5;
-   printf("The average is:%d\n",avg);
+   printf("Enter a number:");
+   scanf("%d",&a);
+    if(a>0)
+   printf("Number is positive");
+   else
+   printf("Number is negative");
   }
 ``` 
 **OUTPUT**:
+```Enter a number:4
+
+  Number is positive
 ```
-Enter five numbers:1 2 3 4 5 
-The sum is:15
-The average is:3
-```
-  ## 5:To find number is even or odd
+  ## 5:Write a source code to find number is even or odd
   ```
        #include<stdio.h>
 int main()
@@ -144,7 +127,7 @@ The  number is even
 Enter a number:7
 The number is odd
 ```
-## 6:To show the size of int,float,char,double,long,short
+## 6:Writeba source code to show the size of int,float,char,double,long,short
 ```
  // size of int, float, char, double, long, short
 #include<stdio.h>
@@ -167,7 +150,7 @@ double:8
 short:2
 long:8
 ```
-## 7:To show area,perimeter,volume of square
+## 7:Write a source code to find area,perimeter,volume of square
 ```
    
  //Area,premiter,volume of square
@@ -197,7 +180,7 @@ Perimeter of square:16
 Area of square:16
 Volume of square:64
 ```
-## 8:To show puts value upto n number using loop
+## 8:Write a source code to show puts value upto n number using loop
 ```
 // to show punishment using loop
  #include<stdio.h>
@@ -247,49 +230,57 @@ diameter of circle is:12.000000
 circumference of circle:37.680000
 Area of circle:113.040001
 ```
-## 10:To find area and volume of rectangle
+## 10:Write a program which takes two intergers operands and one operator from user,perform the operation then print the result(+,-,*,\,%)
 ```
-//find area and volume of rectangle
 #include<stdio.h>
 int main()
 {
- int l,b,h;
- printf("Enter length of rectangle:");
- scanf("%d",&l);
- printf("\nEnter breadth of rectangle:");
- scanf("%d",&b);
- printf("\nEnter height of rectangle:");
- scanf("%d",&h);
- printf("\nThe area of rectangle is:%d",l*b);
- printf("\nThe volume is :%d\n",l*b*h);
- return 0;
+ int a,b,c;
+ char op;
+ printf("Enter two values:\n");
+ scanf("%d%d",&a,&b);
+ printf("\nEnter the operator\n:");
+ scanf(" %c",&op);
+ switch(op)
+ {
+ case'+':printf("%d",a+b);
+ break;
+ case'-':printf("%d",a-b);
+ break;
+ case'*':printf("%d",a*b);
+ break;
+ case'/':printf("%d",a/b);
+ break;
+ case'%':c=a%b;
+         printf("%d",c);
+         break;
+  default:printf("Error");
  }
  ```
  **OUTPUT**:
  ```
- Enter length of rectangle:4 
+ Enter two values
+ 3 5
+ Enter the operator
+ *
+ 15
 
-Enter breadth of rectangle:3 
-
-Enter height of rectangle:4
-
-The area of rectangle is:12
-The volume is :48
 ```
  
- ##  11 .To represent a table of user input 
+ ##  11:Write a program to display the table of a number from user choice
  
  ```
   // To represent a table of user input  number
  #include<stdio.h>
  int main()
  {
-    int i,j,k;
+    int i,a;
   printf("Table of:");
-  scanf("%d",&j);
-
+  scanf("%d",&a);
    for(i=0;i<=10;i++)
-   printf("%d x %d = %d\n",j,i,j*i);
+  {
+  printf("%d x %d = %d\n",a,i,a*i);
+  }
 
 return 0;
 }
@@ -327,86 +318,99 @@ return 0;
 Enter temp in fahrehnite :450
 The celcius value is:232.222229
 ```
-## 13: To show the table range 
+## 13: Write a program to display the table between the range
 ```
 //To show a range of table upto user input
 #include<stdio.h>
 int main()
 {
- int a,b,n;
- printf("table of:");
- scanf("%d",&a);
- printf("\n enter the starting value of range:");
- scanf("%d",&b);
- printf("\n enter the last value of range:");
- scanf("%d",&n);
- for(b;b<=n;b++)
- printf("%d x %d = %d\n",a,b,a*b);
+ int a,b,i,x;
+ printf("Enter the starting number and the ending number:");
+ scanf("%d%d",&a,&b);
+ {
+ for(i=a;i<=b;i++)
+ {
+ for(x=1:x<=10;x++)
+ {
+ printf("\n %d X %d = %d",i,x,i*x);
+ }
+ }
  return 0;
  }
+ 
 ```
 **OUTPUT**:
 ```
-table of:5
 
- enter the starting value of range:20
 
- enter the last value of range:30
-5 x 20 = 100
-5 x 21 = 105
-5 x 22 = 110
-5 x 23 = 115
-5 x 24 = 120
-5 x 25 = 125
-5 x 26 = 130
-5 x 27 = 135
-5 x 28 = 140
-5 x 29 = 145
-5 x 30 = 150
+ Enter the starting number and ending number:2 3
+ 2 X 1 = 2
+ 2 X 2 = 4
+ 2 X 3 = 6
+ 2 X 4 = 8
+ 2 X 5 = 10
+ 2 X 6 = 12
+ 2 X 7 = 14 
+ 2 X 8 = 16
+ 2 X 9 = 18
+ 2 X 10 = 20
+ 3 X 1 = 3 
+ 3 X 2 = 6 
+ 3 X 3 = 9
+ 3 X 4 = 12
+ 3 X 5 = 15
+ 3 X 6 = 18
+ 3 X 7 = 21
+ 3 X 8 = 24
+ 3 X 9 = 27
+ 3 X 10 = 30
+ 
 ```
-## 14:To show even table
+## 14: Write a program to display the table of even number 
 ```
 //To show only even table
 #include<stdio.h>
-int main(){
-int m;
-printf("tabel of:");
-scanf("%d",&m);
-if(m%2==0)
+int main()
 {
-for(int i=0;i<=20;i++)
+int a,b,i,x;
+printf("Enter the starting and ending number:");
+scanf("%d%d",&a,&b);
+for(i=a;i<=b;i++)
 {
-printf("%d X %d=%d\n",m,i,m*i);
-}}
-else
-printf("enter even number\n");
+if(i%2==0)
+{
+for(x=1;x<=10;x++)
+{
+printf("%d X %d = %d\n",i,x,i*x);
+}
+}
+}
 
 return 0;}
 ```
 **OUTPUT**:
 ```
-tabel of:16
-16 X 0=0
-16 X 1=16
-16 X 2=32
-16 X 3=48
-16 X 4=64
-16 X 5=80
-16 X 6=96
-16 X 7=112
-16 X 8=128
-16 X 9=144
-16 X 10=160
-16 X 11=176
-16 X 12=192
-16 X 13=208
-16 X 14=224
-16 X 15=240
-16 X 16=256
-16 X 17=272
-16 X 18=288
-16 X 19=304
-16 X 20=320
+Enter the starting and ending number:2 5
+2 X 1 = 2
+2 X 2 = 4
+2 X 3 = 6
+2 X 4 = 8
+2 X 5 = 10
+2 X 6 = 12 
+2 X 7 = 14
+2 X 8 = 16
+2 X 9 = 18
+2 X 10 = 20
+4 X 1 = 4
+4 X 2 = 8
+4 X 3 = 12
+4 X 4 = 16
+4 X 5 = 20
+4 X 6 = 24
+4 X 7 = 28
+4 X 8 = 32
+4 X 9 = 36
+4 X 10 = 40
 ```
 ## 15: To show result of operands
 ```
@@ -536,20 +540,19 @@ ___________________
                  #include<stdio.h>
  int main()
  {
-  float a,b,c;
+  float a,b;
   printf("Enter a fahrenheit value:");
   scanf("%f",&a);
-b=((a-32.00)*5.00)/9.00;
+  b=((a-32.00)*5.00)/9.00;
  printf("celsius value is:%.2f\n",b);
 
- printf("kelvin value is:%.2f\n",c=b+273.15);
   return 0;} 
 ```
 **OUTPUT**:
 ```
 Enter a fahrenheit value:450
 celsius value is:232.22
-kelvin value is:505.37
+
 ```
 
 ## 18:To show stars pattern
