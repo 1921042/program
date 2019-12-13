@@ -127,7 +127,7 @@ The  number is even
 Enter a number:7
 The number is odd
 ```
-## 6:Writeba source code to show the size of int,float,char,double,long,short
+## 6:Write a source code to show the size of int,float,char,double,long,short
 ```
  // size of int, float, char, double, long, short
 #include<stdio.h>
@@ -230,7 +230,7 @@ diameter of circle is:12.000000
 circumference of circle:37.680000
 Area of circle:113.040001
 ```
-## 10:Write a program which takes two intergers operands and one operator from user,perform the operation then print the result(+,-,*,\,%)
+## 10:Write a program which takes two intergers operands and one operator from user,perform the operation then print the result(+,-,*,/,%)
 ```
 #include<stdio.h>
 int main()
@@ -299,16 +299,16 @@ return 0;
 15 x 9 = 135
 15 x 10 = 150
 ```
-## 12:To convert Fahrehnite to Celcius
+## 12:To convert Fahrehnite to Centigrade
 ```
 //to convert fahrehnite to celcius
 #include<stdio.h>
 int main(){
-float f,c;
+float fah,c;
 printf("Enter temp in fahrehnite :");
-scanf("%f",&f);
+scanf("%f",&fah);
 c=((f-32)*5)/9;
-printf("The celcius value is:%f\n",c);
+printf("The centigrade value is:%f\n",c);
 
 return 0;
 }
@@ -316,7 +316,7 @@ return 0;
 **OUTPUT**:
 ```
 Enter temp in fahrehnite :450
-The celcius value is:232.222229
+The centigrade value is:232.222229
 ```
 ## 13: Write a program to display the table between the range
 ```
@@ -412,42 +412,33 @@ Enter the starting and ending number:2 5
 4 X 9 = 36
 4 X 10 = 40
 ```
-## 15: To show result of operands
+## 15: Write a program to find the factorial using recursion
 ```
 //To show results using operands(+,-,*,%,/)
 #include<stdio.h>
 int main()
 {
-float a,b;
- char c;
-printf("enter first  number:");
-scanf("%f",&a);
-printf("enter operator[+ - % / *]:");
-scanf(" %c",&c);
-printf("enter second number:");
-scanf("%f",&b);
-int d,r;
-d=(int) a;
-r=(int) b;
-switch(c)
+int n,i;
+long int mult(int n);
+printf("Enter the number");
+scanf("%d",&n);
+printf("\nfactorial of %d is %d\n",n,mult(n));
+}
+long int mult(int n )
 {
-case '+': printf("The result is:%.2f\n",a+b); break;
-case '-':printf("The result is:%.2f\n",a-b); break;
-case '*':printf("The result is:%.2f\n",a*b); break;
-case '%':printf("The result is:%d\n",d%r); break;
-case '/':printf("The result is:%.2f\n",a/b); break;
-default : printf("Enter correct operator ");
+if(n>=1)
+return n*mult(n-1);
+else
+return 1;
 }
-return 0;
-}
+
 ```
 
 **OUTPUT**:
 ```
-enter first  number:20
-enter operator[+ - % / *]: *
-enter second number:10
-The result is:200.00
+Enter the number5
+
+factorial of 5 is 120
 ```
 ## 16:To call a patterns of face and calculator
 ```
@@ -534,24 +525,36 @@ ___________________
 |        |        |
 |________|________|
 ```
-## 17:To convert fahrehnite to celcius and kelvin
+## 17:Write a program to cgeck the number is prime or not 
 ```
-  // To covert  fahrenheit to celsius and kelvin
-                 #include<stdio.h>
+ #include<stdio.h>
  int main()
  {
-  float a,b;
-  printf("Enter a fahrenheit value:");
-  scanf("%f",&a);
-  b=((a-32.00)*5.00)/9.00;
- printf("celsius value is:%.2f\n",b);
-
-  return 0;} 
+ int a,i,p=0;
+  printf("Enter the number:");
+  scanf("%d",&a);
+  for(i=1;i<=a;i++)
+  {
+  if(a%i==0)
+  {
+  p++;
+  }
+  }
+  if(p==2)
+  {
+  printf("%d is prime number",a);
+  }
+  else
+  {
+  printf("%d is not prime",a);
+  }
+  return 0;
+  } 
 ```
 **OUTPUT**:
 ```
-Enter a fahrenheit value:450
-celsius value is:232.22
+Enter the number:7
+7 is prime number
 
 ```
 
@@ -588,61 +591,63 @@ int main()
 *
 ```
  
- ## 19:To show factorial result
+ ## 19:Write a program to find factorial of a number
  ```
  //To show factorial of user input
 #include<stdio.h>
 int main()
 {
  int a,result=1;
- printf("Enter the factorial of:");
+ printf("Enter the number:");
  scanf("%d",&a);
  for(int i=a;i>=1;i--)
 {
-printf("%d X ",i);
 result=result*i;
 }
-printf("= %d\n",result);
-return 0;
+printf("Result of factorial is %d\n",result);
+
 }
 ```
 **OUTPUT**:
 ```
-Enter the factorial of:5
-5 X 4 X 3 X 2 X 1 X = 120
+Enter the number:5
+Result of factorial is 120
 ```
- ## 20:To show stars pattern 
+ ## 20: Write a program to check the numbers are prime or not vpbetween the given range
  ```
- //to show star pattern for n numbers
+ 
 #include<stdio.h>
 int main()
 {
- int i,j,k;
- printf("Enter the value upto pattern is shown:");
- scanf("%d",&k);
-
- for(i=1;i<=k;i++)
-{
-  for(j=1;j<=i;j++)
-{
-  printf("* ");
+ int a,b,i,n,p=0;
+ printf("Enter the starting number and ending number");
+ scanf("%d%d",&a,&b);
+ for(i=a;i<=b;i++)
+ {
+ p=1;
+ for(n=2;n<i;n++)
+ {
+ p=0;
+ break;
  }
- printf("\n");
+ }
+ if(p==1)
+ {
+ printf("%d is a prime number\n",i);
+ }
  }
  return 0;
-}
+ }
+
 ```
 **OUTPUT**:
 ```
-Enter the value upto pattern is shown:8
-* 
-* * 
-* * * 
-* * * * 
-* * * * * 
-* * * * * * 
-* * * * * * * 
-* * * * * * * * 
+Enter the starting number and the ending number:2 11
+2 is a prime number
+3 is a prime number
+5 is a prime number
+7 is a prime number
+11 is a prime number
 ```
 
 ## 21:Matrix multipication
