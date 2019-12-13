@@ -626,7 +626,7 @@ printf("Result of factorial is %d\n",result);
 Enter the number:5
 Result of factorial is 120
 ```
- ## 20: Write a program to check the numbers are prime or not vpbetween the given range
+ ## 20: Write a program to check the numbers are prime or not between the given range
  ```
  
 #include<stdio.h>
