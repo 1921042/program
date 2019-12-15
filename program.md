@@ -15,19 +15,27 @@
     Submitted to - Prof.Ranjodh Kaur
     # pps assignment
 
-## 1:Write a source code to print hello world
+## 1:Write a program to find sum and average of five numbers
 
 ``` 
-//To print  hello world
+//to find sum and average
 #include<stdio.h>
 int main()
 {                     
- printf("\nHello world\n");
+ inta,b,c,d,e,sum,avg;
+ printf("Enter the five numbers:");
+ scanf("%d%d%d%d%d",&a&b&c&d&e);
+ sum=a+b+c+d+e;
+ printf("The sum is:%d\n",sum);
+ avg=sum/5;
+ printf("The average is:%d\n",avg);
 }
 ```
 **OUTPUT:**
 ``` 
- Hello world
+ Enter the five numbers:1 2 3 4 5 
+ The sum is:15
+ The average is:3
 ```
 ## 2:Write a program to calculate experience of employees
 
@@ -61,30 +69,31 @@ Total experience is:9
 
  ```
 
-## 3:Write a program to find sum of two numbers
+## 3:Write a program to reverse a number i.e 1234 output will be 4321
 ```
-
-     // to find sum of two numbers
-     #include<stdio.h>
+#include<stdio.h>
 int main()
-{                                                                                      
- int a;
- int b;
- int c ;
- printf("Enter two numbers to get sum:");
- scanf("%d  %d",&a,&b);
- printf(" \nThe result is :%d + %d= %d\n",a,b,c=a+b);
-    return 0;
+{                                                                                    
+ int rem,n;
+ printf("Enter the number:");
+ scanf("%d",&n);
+ while(n>0)
+ {
+ rem=n%10
+ printf("%d",rem);
+ n=n/10;
+ }
+ return 0;
  }
 ```
 **OUTPUT**:
 ```
-Enter two numbers to get sum:30 40
- 
-The result is :30 + 40= 70
+Enter the number:1234
+4321
 ```
 ## 4:Write a program to check whether the number is positive or negative
 ```
+//to check number is positive or negative
 #include<stdio.h>
   int main()
  {                                 
@@ -99,13 +108,15 @@ The result is :30 + 40= 70
   }
 ``` 
 **OUTPUT**:
-```Enter a number:4
+```
+Enter a number:4
 
   Number is positive
 ```
   ## 5:Write a program  to find whether the given number is even or odd
   ```
-       #include<stdio.h>
+  //to check even or odd 
+ #include<stdio.h>
 int main()
  {                                
     int a;   
@@ -129,6 +140,7 @@ The number is odd
 ```
 ## 6:Write a program to fill your information
 ```
+// to fill your information
 #include<stdio.h>
 void info();
 int main()
@@ -203,23 +215,23 @@ Volume of square:64
  printf("Enter the number upto punishment is shown:");
  scanf("%d",&a);
   for(i=1;i<=a;i++)
-puts("WORK HARD AND ACHIEVE SUCCESS ");
+puts("DO GOOD HAVE GOOD");
 return 0;
 }
 ```
 **OUTPUT**:
 ```
 Enter the number upto punishment is shown:10
-WORK HARD AND ACHIEVE SUCCESS 
-WORK HARD AND ACHIEVE SUCCESS 
-WORK HARD AND ACHIEVE SUCCESS 
-WORK HARD AND ACHIEVE SUCCESS 
-WORK HARD AND ACHIEVE SUCCESS 
-WORK HARD AND ACHIEVE SUCCESS 
-WORK HARD AND ACHIEVE SUCCESS 
-WORK HARD AND ACHIEVE SUCCESS 
-WORK HARD AND ACHIEVE SUCCESS 
-WORK HARD AND ACHIEVE SUCCESS
+DO GOOD HAVE GOOD
+DO GOOD HAVE GOOD
+DO GOOD HAVE GOOD
+DO GOOD HAVE GOOD
+DO GOOD HAVE GOOD
+DO GOOD HAVE GOOD
+DO GOOD HAVE GOOD
+DO GOOD HAVE GOOD
+DO GOOD HAVE GOOD
+DO GOOD HAVE GOOD
 ```
 ## 9:Write a program to find area,diameter,circumference of circle 
 ```
@@ -316,7 +328,8 @@ return 0;
 ```
 //to convert fahrehnite to celcius
 #include<stdio.h>
-int main(){
+int main()
+{
 float fah,c;
 printf("Enter temp in fahrehnite :");
 scanf("%f",&fah);
@@ -453,47 +466,10 @@ Enter the number5
 
 factorial of 5 is 120
 ```
-## 16:Write a program to call a patterns of face and calculator
+## 16:Write a program to display a face pattern
 ```
-// call a pattern of face or calculator
-             #include<stdio.h>
-
-void calculator();
-void face();
-int main()
-{  int a;
- printf("enter 0 to see a calculator or 1 to see face\n");
- scanf("%d",&a);
-
-if(a==0)
-{
-   calculator();
-}
-   else if(a==1)
-{
-     face();
-  }
- else
-{
-  printf("enter correct values\n");
-}
-}
- void calculator()
-{ 
-puts(" _______________");
-puts("|               |");
-puts("|_______________|");
-puts("| 1 | 2 | 3 |   |");
-puts("|___|___|___|   |");
-puts("| 4 | 5 | 6 | + |");
-puts("|___|___|___|___|");
-puts("| 7 | 8 | 9 | - |");
-puts("|___|___|___|___|");
-puts("|     0     | * |");
-puts("|___________|___|");
-}
- 
- void face()
+#include<stdio.h>
+int main() 
 {
 puts("___________________");
 puts("|   XXXXXXXXXXX   |");
@@ -507,26 +483,8 @@ puts("|        |        |");
 puts("|________|________|");
 }
 ```
-**OUTPUT**:IF YOU ENTER 0 THEN OUTPUT IS :
-``` 
-enter 0 to see a calculator or 1 to see face
-0
- _______________
-|               |
-|_______________|
-| 1 | 2 | 3 |   |
-|___|___|___|   |
-| 4 | 5 | 6 | + |
-|___|___|___|___|
-| 7 | 8 | 9 | - |
-|___|___|___|___|
-|     0     | * |
-|___________|___|
+**OUTPUT**
 ```
-IF YOU ENTER 1 THEN OUTPUT
-```
-enter 0 to see a calculator or 1 to see face
-1
 ___________________
 |   XXXXXXXXXXX   |
 |   ( ^     ^ )   |
@@ -663,74 +621,62 @@ Enter the starting number and the ending number:2 11
 11 is a prime number
 ```
 
-## 21:Write a program to show Matrix multipication
+## 21:Write a program to show matrix addition
  ```
 #include<stdio.h>
 int main()
 {
-int sum=0,m,n,p,q,c,d,k;
-int first[10][10], second[10][10], multiply[10][10];
-// for matrix 1
-printf("Enter the number of rows and column of first matrix:\n");
-scanf("%d %d",&m,&n);
-printf("Enter elements of first matrix:\n");
-
-for(c=0;c<m;c++)
- for(d=0;d<n;d++)
-  scanf("%d",&first[c][d]);
-// for second matrix
-printf("Enter the number of rows and columns of second matrix:\n");
-scanf("%d %d",&p,&q);
-
-if(n!=p){
-printf("matrix multipication cannot be possible !!!!\n");}
-
-else{
-printf("Enter the elements of second matrix:\n");
-for(c=0;c<p;c++)
- for(d=0;d<q;d++)
-  scanf("%d",&second[c][d]);
-
-for(c=0;c<m;c++)
+int row,col,row1,col1,i,j ;
+int arr[10][10],arr1[10][10],sum[10][10];
+printf("Enter the rows of 1 matrix");
+scanf("%d",&row);
+printf("Enter the columns of 1 matrix");
+scanf("%d",&col);
+printf("Enter the elements of 1 matrix");
+for(i=0;i<row;i++)
 {
- for(d=0;d<q;d++)
+  for(j=0;j<col;j++)
+   {
+    scanf("%d",&arr[i][j]);
+   } 
+} 
+printf("Enter the elements of 2 matrix");
+for(i=0;i<row;i++)
 {
-  for(k=0;k<p;k++)
-{                             
-  sum = sum + first[c][k] * second[k][d];
-  }
-   multiply[c][d] = sum;
- sum =0;
-}
-}
-
-  printf("product of the matrix:\n");
-  
-  for(c=0;c<m;c++)
+  for(j=0;j<col;j++)
+   {
+    scanf("%d",&arr1[i][j]);
+   } 
+} 
+for(i=0;i<row;i++)
 {
-  for(d=0;d<q;d++)
-   printf("%d\t",multiply[c][d]);
-   printf("\n");
-}
-}                             
- return 0;
+  for(j=0;j<col;j++)
+   {
+    sum[i][j]=arr[i][j]+arr1[i][j]);
+   } 
+} 
+for(i=0;i<row;i++)
+{
+  for(j=0;j<col;j++)
+   {
+    printf("%d",sum[i][j]);
+    if(j==col-1)
+       printf("\n\n");
+   } 
+} 
+return 0;
  }
  ```
  **OUTPUT**:
  ```
- Enter the number of rows and column of first matrix:
-2 2
-Enter elements of first matrix:
-3 4
-5 6
-Enter the number of rows and columns of second matrix:
-2 2
-Enter the elements of second matrix:
-1 2
-3 4
-product of the matrix:
-15      22
-23      34
+ Enter the rows of 1 matrix:2
+Enter the columns of 1 matrix:2
+Enter the elements of 1 matrix:3 1 4 2
+Enter the elements of 2 matrix:5 3 5 1
+ 8  4
+ 
+ 9  3
+  
 ```
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTk0Njc2OTc1MiwxNjU2OTAxNTI4LC03Mj
