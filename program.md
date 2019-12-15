@@ -71,6 +71,7 @@ Total experience is:9
 
 ## 3:Write a program to reverse a number i.e 1234 output will be 4321
 ```
+//to reverse a number
 #include<stdio.h>
 int main()
 {                                                                                    
@@ -235,6 +236,7 @@ DO GOOD HAVE GOOD
 ```
 ## 9:Write a program to find area,diameter,circumference of circle 
 ```
+//To find area diameter and circumference of circle
    #include<stdio.h>
  int main()
   {
@@ -257,6 +259,7 @@ Area of circle:113.040001
 ```
 ## 10:Write a program which takes two intergers operands and one operator from user,perform the operation then print the result(+,-,*,/,%)
 ```
+//use of operators using switch case
 #include<stdio.h>
 int main()
 {
@@ -440,7 +443,7 @@ Enter the starting and ending number:2 5
 ```
 ## 15: Write a program to find the factorial using recursion
 ```
-//To show results using operands(+,-,*,%,/)
+//To find factorial using recursion
 #include<stdio.h>
 int main()
 {
@@ -586,7 +589,6 @@ Result of factorial is 120
 ```
  ## 20: Write a program to check the numbers are prime or not between the given range
  ```
- 
 #include<stdio.h>
 int main()
 {
