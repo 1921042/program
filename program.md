@@ -176,7 +176,7 @@ Phone no.=9922113355
 
 My name is simar. My roll no is 445.My phone number is 9922113355.My age is 25
 ```
-## 7:Write a program to find area,perimeter,volume of square
+## 7:Write a program to find area,perimeter of square
 ```
    
  //Area,premiter,volume of square
@@ -195,7 +195,7 @@ void square()
 
  printf("\nPerimeter of square:%d",4*side);
  printf("\nArea of square:%d",side*side);
- printf("\nVolume of square:%d\n",side*side*side);
+
 }
 ```
 **OUTPUT**:
@@ -204,7 +204,6 @@ Enter the side of square:4
 
 Perimeter of square:16
 Area of square:16
-Volume of square:64
 ```
 ## 8:Write a program to show puts value upto n number using loop
 ```
@@ -216,23 +215,23 @@ Volume of square:64
  printf("Enter the number upto punishment is shown:");
  scanf("%d",&a);
   for(i=1;i<=a;i++)
-puts("DO GOOD HAVE GOOD");
+puts("switch off lights and fans ");
 return 0;
 }
 ```
 **OUTPUT**:
 ```
 Enter the number upto punishment is shown:10
-DO GOOD HAVE GOOD
-DO GOOD HAVE GOOD
-DO GOOD HAVE GOOD
-DO GOOD HAVE GOOD
-DO GOOD HAVE GOOD
-DO GOOD HAVE GOOD
-DO GOOD HAVE GOOD
-DO GOOD HAVE GOOD
-DO GOOD HAVE GOOD
-DO GOOD HAVE GOOD
+switch off lights and fans
+switch off lights and fans
+switch off lights and fans
+switch off lights and fans
+switch off lights and fans
+switch off lights and fans
+switch off lights and fans
+switch off lights and fans
+switch off lights and fans
+switch off lights and fans
 ```
 ## 9:Write a program to find area,diameter,circumference of circle 
 ```
